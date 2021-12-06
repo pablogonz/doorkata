@@ -5,9 +5,3 @@ test('OpenAndUnlocked', () => {
 
   });
 
-const d2 = new Door(true,false,true,false,"123");
-test('OpenAndLocked', () => {
-    expect(d2).toEqual({"IsOpen":true, "IsClosed":false, "IsLocked":true, "IsUnlocked":false, "key":"123"});
-
-  });
-  
