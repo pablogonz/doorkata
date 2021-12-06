@@ -10,4 +10,8 @@ test('OpenAndLocked', () => {
     expect(d2).toEqual({"IsOpen":true, "IsClosed":false, "IsLocked":true, "IsUnlocked":false, "key":"123"});
 
   });
+  const d3 = new Door(false,true,true,false,"123");
+  test('ClosedAndlocked', () => {
+      expect(d3).toEqual({"IsOpen":false, "IsClosed":true, "IsLocked":true, "IsUnlocked":false, "key":"123"});
   
+    });
